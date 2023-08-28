@@ -1,0 +1,30 @@
+import time
+salary= int(input("What is your monthly salary? "))
+bonus = int((salary * 0.1))
+expense = int(input("What are your monthly expenses? "))
+totalmonthlytakeawaysalary = int(salary + bonus - expense)
+totalannualtakeawaysalary = int(totalmonthlytakeawaysalary * 12)
+
+print("Your bonus is :" , bonus )
+
+
+
+time.sleep(4)
+print("Your total takeaway salary at the end of the month is :",totalmonthlytakeawaysalary)
+
+time.sleep(4)
+print("Your total takeaway salary at the end of the year is :",totalannualtakeawaysalary)
+
+time.sleep(4)
+
+if totalannualtakeawaysalary > 1200000:
+    print("You're in the top 1%")
+    
+elif totalannualtakeawaysalary > 700000:
+    print("You're in the top 5%")
+    
+elif totalannualtakeawaysalary > 450000:
+    print("You're in the top 10%")
+
+else:
+    print("You fall below the top 10%")
